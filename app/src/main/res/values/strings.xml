@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">二维码扫描</string>
+    <string name="dialog_title">提示</string>
+    <string name="dialog_message">请在系统设置中为App开启摄像头权限后重试</string>
+    <string name="dialog_positive">确定</string>
+    <string name="dialog_error">相机加载异常，无法正常使用</string>
+    <string name="from_history">从历史记录中选择</string>
+    <string name="tips_scan_code">将二维码放入框内，即可自动扫描</string>
+    <string name="share">share</string>
+    <string name="history">历史记录</string>
+    <string name="content">详细信息</string>
+</resources>

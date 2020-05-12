@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.journeyapps.barcodescanner.BarcodeView
+        android:id="@+id/barcodeView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:onClick="click" />
+
+    <ImageView
+        android:id="@+id/ivFlash"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="40dp"
+        android:onClick="click"
+        android:src="@drawable/flash" />
+
+    <ImageView
+        android:id="@+id/openHistory"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="40dp"
+        android:onClick="click"
+        android:src="@drawable/history" />
+
+<!--    <ImageView-->
+<!--        android:id="@+id/scan_line"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="3dp"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_marginTop="200dp"-->
+<!--        android:layout_marginLeft="70dp"-->
+<!--        android:layout_marginRight="70dp"-->
+<!--        android:background="@mipmap/line" />-->
+
+    <RelativeLayout
+        android:id="@+id/scan_result"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/back_result"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/result_share"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            android:onClick="click"
+            android:src="@drawable/share" />
+
+        <TextView
+            android:id="@+id/text_result"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_toStartOf="@id/result_share"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp"
+            android:onClick="click"/>
+    </RelativeLayout>
+
+</RelativeLayout>
